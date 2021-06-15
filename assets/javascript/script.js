@@ -2,9 +2,9 @@ var generateBtn = document.querySelector("#generate");
 
 // Determines length of password
 function getLength() {
-  let length = prompt("How many characters do you want in your password? Type a number between 8 and 128.");
-  while (length < 8 || length > 128 ) {
-    length = prompt("Please try again and type a number between 8 and 128!");
+  let length = Number(prompt("How many characters do you want in your password? Type a number between 8 and 128."));
+  while (length < 8 || length > 128 || isNaN(length)) {
+    length = Number(prompt("Please try again and type a number between 8 and 128!"));
   } 
   return length;
 }
