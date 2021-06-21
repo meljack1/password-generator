@@ -44,7 +44,7 @@ function generatePassword() {
 
   if (charsetString == "") {
     alert("Please select at least one valid character type!");
-    return "Your Secure Password";
+    return "";
   }
 
   let password = "";
